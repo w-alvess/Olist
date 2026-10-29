@@ -1,0 +1,14 @@
+# Ambiente
+.venv/
+
+# Caches / artefatos
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Banco gerado pelo pipeline (>100 MB, limite do GitHub)
+*.duckdb
+*.duckdb.wal

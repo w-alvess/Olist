@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "duckdb": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["--overrides", "mcp-overrides.txt", "mcp-server-motherduck@latest", "--db-path", "olist.duckdb"],
+      "env": {}
+    }
+  }
+}
