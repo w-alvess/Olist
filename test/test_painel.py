@@ -6,7 +6,6 @@ import pytest
 
 import painel
 
-
 # --- P4: formato -----------------------------------------------------------
 
 def test_numero_usa_ponto_no_milhar_e_virgula_no_decimal():

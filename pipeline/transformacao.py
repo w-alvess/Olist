@@ -254,8 +254,10 @@ def _diagnosticar_conversao(
         except duckdb.Error as e:
             _abortar(
                 [
-                    f"Conversão falhou em {ORIGEM}.{tabela}, coluna {origem} "
-                    f"(-> {destino} {tipo}).",
+                    (
+                        f"Conversão falhou em {ORIGEM}.{tabela}, coluna {origem} "
+                        f"(-> {destino} {tipo})."
+                    ),
                     f"  {e}",
                 ]
             )
@@ -284,8 +286,10 @@ def _conflitos_de_chave(con: duckdb.DuckDBPyConnection, tabela: str) -> None:
     nomes = [destino for _, destino, _ in colunas]
     posicoes = [nomes.index(c) for c in chave]
     linhas = [
-        f"Chave repetida com conteúdo diferente em {DESTINO}.{tabela} "
-        f"(chave: {', '.join(chave)}):"
+        (
+            f"Chave repetida com conteúdo diferente em {DESTINO}.{tabela} "
+            f"(chave: {', '.join(chave)}):"
+        )
     ]
     for linha in conflitantes:
         valor_chave = ", ".join(str(linha[p]) for p in posicoes)
