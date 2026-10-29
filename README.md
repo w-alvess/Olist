@@ -43,6 +43,10 @@ uv run python relatorio.py    # gera relatorio.html
 uv run python ui.py           # explorador do banco em http://localhost:4213
 ```
 
+## Painel online
+
+O painel é publicado no [Streamlit Community Cloud](https://share.streamlit.io) a partir de `streamlit_app.py`. Como o `olist.duckdb` não está no repositório, esse arquivo roda as três etapas do pipeline na primeira subida do servidor (uns 10 segundos) e depois abre o `app.py`.
+
 ## Testes e lint
 
 ```bash

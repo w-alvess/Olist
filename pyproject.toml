@@ -22,7 +22,7 @@ pythonpath = ["."]
 
 [tool.coverage.run]
 source = ["."]
-omit = ["test/*", "app.py", "ui.py", ".venv/*"]
+omit = ["test/*", "app.py", "ui.py", "streamlit_app.py", ".venv/*"]
 
 [tool.coverage.report]
 fail_under = 60
