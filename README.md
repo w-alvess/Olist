@@ -1,5 +1,7 @@
 # Olist · visão da operação
 
+**[Abrir o painel online](https://olist-wesley.streamlit.app/)**
+
 Pipeline de dados sobre o [dataset público de e-commerce da Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), com DuckDB, marts em SQL, painel em Streamlit e relatório HTML estático.
 
 ## Estrutura
@@ -45,7 +47,7 @@ uv run python ui.py           # explorador do banco em http://localhost:4213
 
 ## Painel online
 
-O painel é publicado no [Streamlit Community Cloud](https://share.streamlit.io) a partir de `streamlit_app.py`. Como o `olist.duckdb` não está no repositório, esse arquivo roda as três etapas do pipeline na primeira subida do servidor (uns 10 segundos) e depois abre o `app.py`.
+O painel está em https://olist-wesley.streamlit.app/, publicado no [Streamlit Community Cloud](https://share.streamlit.io) a partir de `streamlit_app.py`. Como o `olist.duckdb` não está no repositório, esse arquivo roda as três etapas do pipeline na primeira subida do servidor (uns 10 segundos) e depois abre o `app.py`.
 
 ## Testes e lint
 
